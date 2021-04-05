@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  
+
+}
+
+header{
+   
+   background-repeat: no-repeat; 
+   background-size: cover;
+   background-position: center;
+   height: 150px;
+   position: relative;
+  
+}
+.overlay{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(39, 38, 38, 0.3);
+}
+nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 60px 0px 60px;
+}
+nav li{
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+nav li span{
+    padding-left: 50px;
+    font-weight: bold;
+}
+li a{
+    padding: 10px;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+.cart a{
+    background-color: rgb(176, 255, 30);
+    color: firebrick;
+}
+.card {
+    display:inline-block;
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 250px;
+        margin-right: 50px;
+        margin-bottom: 40px;
+        text-align: center;
+        font-family: arial;
+        padding-top: 20px;
+  }
+  #image{
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      margin-bottom: 20px;
+  }
+  #title{
+      margin-bottom: 20px;
+      font-size: 18px;
+  }
+  #des{
+      font-size: 12px;
+      text-align: center;
+      margin-bottom: 10px;
+  }
+
+.add-cart {
+    background-color: darksalmon;
+    border: 0;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    width: 150px;
+    font-size: 20px;
+    
+  }
+.add-cart:active{
+    transform: scale(0.98);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    padding-bottom: 50px;
+  }
+  
+  input {
+    width: 16rem;
+  }
+  
+  .container {
+    margin-top: 30px;
+  }
+  
+  .header-order {
+    text-align: center;
+  }
+  
+  .error {
+    background-color: #bd7d7d;
+    border: 1px solid black;
+  }
+  
+  .cart {
+    font-weight: 600;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .cart-order {
+    display: inline-block;
+    max-width: 100px;
+    max-height: 100px;
+    padding: 3px;
+  }
+

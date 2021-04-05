@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uppgift2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <header>
+          <div class="overlay"></div>
+          <nav>
+              <h2></h2>
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li class="cart">
+                      <button  onclick=showTheCartitems() >Cart</button><div id="numberofItemInCart" >0</div> 
+                  </li>
+              </ul>
+             
+          </nav>
+      </header>
+    </header>
+    
+     
+      <div id="output" class="container"></div>
+       <div id ="cartitem"></div>
+        <h2 class="header-order">Order</h2>
+       
+       <div class="container">
+        <div id="order-form">
+          <form action="action_page.php" name="orderForm" onsubmit="return validate(this)">
+            First namn <br />
+            <input type="text" name="firstName" placeholder="First namn" size="25" /> <br /><br />
+            Last namn <br />
+            <input type="text" name="lastName" placeholder="Last namn" size="25" /> <br /><br />
+            Telephone number <br />
+            <input type="tel" name="telNumber" placeholder="Telephone number" size="25" /><br /><br />
+            E-mail <br />
+            <input type="email" name="email" placeholder="E-mail" size="25" /> <br /><br />
+            Addres <br />
+            <input type="text" name="adress" placeholder="Address" /><br /><br />
+            <input type="submit" value=" Order" onClick="return validate();"/>
+          </form>
+        </div>
+      </div>
+    <div class="container">
+        <div id="text"></div>
+    </div>
+
+       <!---
+       <div id="output"></div>
+       <div id ="cartitem"></div>
+       -->
+      <script src="Main.js"></script>
+</body>
+</html>
